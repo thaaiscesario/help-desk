@@ -1,0 +1,18 @@
+<div>
+    <h1>Adicione um chamado</h1>
+    <form [formGroup]="chamadoForm">
+        
+        <!-- ID: <input [(ngModel)]="idFila" name= "idFila" type= "number"><br> -->
+        ID do Chamado: <input [(ngModel)]="id" name="id" type="number" formControlName="id"><br><br>
+        ID da Fila: <input [(ngModel)]="idFila" name="idFila" type="number"><br><br>
+        Status: <input [(ngModel)]="status" name="status" type="text"><br><br>
+        Data Abertura: <input [(ngModel)]="dataAbertura" name="dataAbertura" type="text"><br><br>
+        Data Fechamento: <input [(ngModel)]="dataFechamento" name="dataFechamento" type="text"><br><br>
+        Descrição do Chamado: <input [(ngModel)]="descricao" name="descricao" type="text" formControlName="descricao"><br><br>
+        Descrição de Finalização: <input [(ngModel)]="descricaoFinalizacao" name="descricaoFinalizacao" type="text"><br><br>
+    </form>
+    <div>
+        <app-botao texto="Adicionar Chamado" (click)="adicionarChamado()" [disabled]="!chamadoForm.valid">{{texto}}</app-botao>
+        <app-botao texto="Voltar" (click)="voltar()" ></app-botao>
+    </div>
+</div>

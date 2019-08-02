@@ -1,0 +1,9 @@
+<form [formGroup]="chamadoForm">
+        <label>ID</label>
+        <!-- <input type="text" fromControlName="descricao"> -->
+        <input type="text" formControlName="id">
+    <label>Descrição</label>
+    <!-- <input type="text" fromControlName="descricao"> -->
+    <input type="text" formControlName="desc">
+    <button (click)= "salvar ()" [disabled]="!chamadoForm.valid">Salvar</button>
+</form>

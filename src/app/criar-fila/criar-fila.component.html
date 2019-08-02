@@ -1,0 +1,6 @@
+<form>
+    <!-- ID: <input [(ngModel)]="idFila" name= "idFila" type= "number"><br> -->
+    Nome: <input [(ngModel)]="nomeFila" name= "nomeFila" type= "text">
+</form>
+<!-- <button (click)= "adicionarFila()">Adicionar Item</button> -->
+<app-botao texto= "Adicionar Item" (click)= "adicionarFila()">{{texto}}</app-botao>

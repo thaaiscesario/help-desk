@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="Titulo">Detalhe do Chamado {{dadosDoChamado.id}}</h1>
+    <br>
+    {{dadosDoChamado.id}}<br>
+    {{dadosDoChamado.descricao}}<br>
+    {{dadosDoChamado.status}}<br>
+    {{dadosDoChamado.dataAbertura | date: 'dd/MM/yyyy'}}<br>
+    {{dadosDoChamado.dataFechamento | date: 'dd/MM/yyyy'}}<br>
+    {{dadosDoChamado.descricaoFinalizacao}}<br>
+    <!-- <table>
+        <thead>
+            <td>#</td>
+            <td>Descrição</td>
+            <td>Status</td>
+            <td>Data Abertura</td>
+            <td>Data Fechamento</td>
+            <td>Descrição Finalização</td>
+        </thead>
+        <tbody>
+            <!-- <tr *ngIf = "item.status !== 'fechado'"> 
+
+            <a>
+                <td>{{dadosDoChamado.id}}</td>
+                <td>{{dadosDoChamado.descricao}}</td>
+                <td>{{dadosDoChamado.status}}</td>
+                <td>{{dadosDoChamado.dataAbertura | date: 'dd/MM/yyyy'}}</td>
+                <td>{{dadosDoChamado.dataFechamento | date: 'dd/MM/yyyy'}}</td>
+                <td>{{dadosDoChamado.descricaoFinalizacao}}</td>
+            </a>
+
+        </tbody>
+    </table> -->
+</div>

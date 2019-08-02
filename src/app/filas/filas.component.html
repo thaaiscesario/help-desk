@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="titulo">Filas</h1>
+    <ul class="filas">
+        <li *ngFor="let item of leiaDaFila()">
+            <a [routerLink] = "['/chamados', item.id]">
+                {{item.id}} - 
+                {{item.nome}} - 
+                {{item.slug}}
+            </a>
+        </li>
+    </ul>
+    <app-botao texto = "Adicionar" ></app-botao>
+    <app-botao texto = "Excluir"></app-botao>
+    <app-botao texto = "Consultar"></app-botao>
+</div>
